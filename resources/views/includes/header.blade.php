@@ -9,7 +9,7 @@
                     <a url="{{ route('character') }}">CHARACTERS</a>
                 </li>
                 <li>
-                    <a url="{{ route('home') }}">COMICS</a>
+                    <a class="active" url="{{ route('home') }}">COMICS</a>
                 </li>
                 <li>
                     <a url="{{ route('movies') }}">MOVIES</a>

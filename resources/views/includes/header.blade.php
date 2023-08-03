@@ -6,34 +6,36 @@
         <div class="col">
             <ul>
                 <li>
-                    <a href="{{ route('character') }}">CHARACTERS</a>
+                    <a @if (Route::is('character')) class="active" @endif
+                        href="{{ route('character') }}">CHARACTERS</a>
                 </li>
                 <li>
-                    <a class="active" href="{{ route('home') }}">COMICS</a>
+                    <a @if (Route::is('home')) class="active" @endif href="{{ route('home') }}">COMICS</a>
                 </li>
                 <li>
-                    <a href="{{ route('movies') }}">MOVIES</a>
+                    <a @if (Route::is('movies')) class="active" @endif href="{{ route('movies') }}">MOVIES</a>
                 </li>
                 <li>
-                    <a href="{{ route('tv') }}">TV</a>
+                    <a @if (Route::is('tv')) class="active" @endif href="{{ route('tv') }}">TV</a>
                 </li>
                 <li>
-                    <a href="{{ route('games') }}">GAMES</a>
+                    <a @if (Route::is('games')) class="active" @endif href="{{ route('games') }}">GAMES</a>
                 </li>
                 <li>
-                    <a href="{{ route('collectibles') }}">COLLECTIBLES</a>
+                    <a @if (Route::is('collectibles')) class="active" @endif
+                        href="{{ route('collectibles') }}">COLLECTIBLES</a>
                 </li>
                 <li>
-                    <a href="{{ route('videos') }}">VIDEOS</a>
+                    <a @if (Route::is('videos')) class="active" @endif href="{{ route('videos') }}">VIDEOS</a>
                 </li>
                 <li>
-                    <a href="{{ route('fans') }}">FANS</a>
+                    <a @if (Route::is('fans')) class="active" @endif href="{{ route('fans') }}">FANS</a>
                 </li>
                 <li>
-                    <a href="{{ route('news') }}">NEWS</a>
+                    <a @if (Route::is('news')) class="active" @endif href="{{ route('news') }}">NEWS</a>
                 </li>
                 <li>
-                    <a href="{{ route('shop') }}">SHOP</a>
+                    <a @if (Route::is('shop')) class="active" @endif href="{{ route('shop') }}">SHOP</a>
                 </li>
             </ul>
         </div>

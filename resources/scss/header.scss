@@ -9,7 +9,7 @@ header {
     
     .col {
         height: 100px;
-        flex-basis: calc(100% / 2);
+        flex-basis: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,6 +42,10 @@ header {
         color: white;
     }
 
+    input{
+        padding: 10px;
+        border-color: #0282f9;
+    }
 }
 
 .nav-bottom {

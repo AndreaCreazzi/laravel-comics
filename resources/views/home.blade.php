@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('title', 'Laravel Comics')
+
 @section('main-content')
     <section class="comics">
         <div class="card-container">

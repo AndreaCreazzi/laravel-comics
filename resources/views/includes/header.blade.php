@@ -37,6 +37,9 @@
                 </li>
             </ul>
         </div>
+        <div class="col">
+            <input type="text" placeholder="search">
+        </div>
     </nav>
     <div class="nav-bottom"></div>
 </header>

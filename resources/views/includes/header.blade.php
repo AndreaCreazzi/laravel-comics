@@ -39,17 +39,4 @@
         </div>
     </nav>
     <div class="nav-bottom"></div>
-    <div class="card-container">
-        @foreach ($heroes as $hero)
-            <div class="card">
-                <div class="img-container">
-                    <img class="img-card" src="{{ $hero['thumb'] }}" alt="">
-                </div>
-                <p class="p-subclass">{{ $hero['series'] }}</p>
-            </div>
-        @endforeach
-    </div>
-    <div class="load">
-        <p class="btn">LOAD MORE</p>
-    </div>
 </header>

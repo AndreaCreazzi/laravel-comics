@@ -39,6 +39,7 @@
         </div>
         <div class="col">
             <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </nav>
     <div class="nav-bottom"></div>

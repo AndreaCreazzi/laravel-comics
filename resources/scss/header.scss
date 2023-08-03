@@ -48,6 +48,12 @@ header {
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
+        position: relative;
+    }
+
+    .fa-solid{
+        position: absolute;
+        right: 15%;
     }
 }
 

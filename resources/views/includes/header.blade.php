@@ -6,34 +6,34 @@
         <div class="col">
             <ul>
                 <li>
-                    <a url="{{ route('character') }}">CHARACTERS</a>
+                    <a href="{{ route('character') }}">CHARACTERS</a>
                 </li>
                 <li>
-                    <a class="active" url="{{ route('home') }}">COMICS</a>
+                    <a class="active" href="{{ route('home') }}">COMICS</a>
                 </li>
                 <li>
-                    <a url="{{ route('movies') }}">MOVIES</a>
+                    <a href="{{ route('movies') }}">MOVIES</a>
                 </li>
                 <li>
-                    <a url="{{ route('tv') }}">TV</a>
+                    <a href="{{ route('tv') }}">TV</a>
                 </li>
                 <li>
-                    <a url="{{ route('games') }}">GAMES</a>
+                    <a href="{{ route('games') }}">GAMES</a>
                 </li>
                 <li>
-                    <a url="{{ route('collectibles') }}">COLLECTIBLES</a>
+                    <a href="{{ route('collectibles') }}">COLLECTIBLES</a>
                 </li>
                 <li>
-                    <a url="{{ route('videos') }}">VIDEOS</a>
+                    <a href="{{ route('videos') }}">VIDEOS</a>
                 </li>
                 <li>
-                    <a url="{{ route('fans') }}">FANS</a>
+                    <a href="{{ route('fans') }}">FANS</a>
                 </li>
                 <li>
-                    <a url="{{ route('news') }}">NEWS</a>
+                    <a href="{{ route('news') }}">NEWS</a>
                 </li>
                 <li>
-                    <a url="{{ route('shop') }}">SHOP</a>
+                    <a href="{{ route('shop') }}">SHOP</a>
                 </li>
             </ul>
         </div>

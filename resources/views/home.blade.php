@@ -3,6 +3,16 @@
 @section('title', 'Laravel Comics')
 
 @section('main-content')
+    <section>
+        <figure>
+            <p><img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">DIGITAL COMICS</p>
+            <p><img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">DC MERCHANDISE</p>
+            <p><img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">SUBSCRITION</p>
+            <p><img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">COMIC SHOP LOCATOR
+            </p>
+            <p><img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">DC POWER VISA</p>
+        </figure>
+    </section>
     <div class="row">
         <div class="col">
             <h3>DC COMICS</h3>
@@ -48,14 +58,4 @@
             </ul>
         </div>
     </div>
-    <section>
-        <figure>
-            <p><img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">DIGITAL COMICS</p>
-            <p><img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">DC MERCHANDISE</p>
-            <p><img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">SUBSCRITION</p>
-            <p><img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">COMIC SHOP LOCATOR
-            </p>
-            <p><img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">DC POWER VISA</p>
-        </figure>
-    </section>
 @endsection

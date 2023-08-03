@@ -1,4 +1,5 @@
 <footer>
+
     <div class="row">
         <div class="col">
             <h4>SIGN-UP NOW!</h4>

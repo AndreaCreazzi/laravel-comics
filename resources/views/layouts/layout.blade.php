@@ -10,7 +10,15 @@
 </head>
 
 <body>
+    {{-- HEADER --}}
+    @include('includes.header')
 
+    <main>
+
+    </main>
+
+    {{-- FOOTER --}}
+    @include('includes.footer')
 </body>
 
 </html>

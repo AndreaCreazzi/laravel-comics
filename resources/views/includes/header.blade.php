@@ -38,7 +38,7 @@
             </ul>
         </div>
         <div class="col">
-            <input type="text" placeholder="search">
+            <input type="text" placeholder="Search">
         </div>
     </nav>
     <div class="nav-bottom"></div>

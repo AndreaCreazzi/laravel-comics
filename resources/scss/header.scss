@@ -6,7 +6,7 @@ header {
         display: flex;
     }
     
-    img {
+    .logo {
         max-width: 70px;
     }
     
@@ -30,6 +30,7 @@ header {
         a {
             text-decoration: none;
             font-size: 0.9rem;
+            font-weight: bold;
             padding: 2.4rem 0.6rem;
         }
     }
@@ -41,12 +42,43 @@ header {
     }
     
     h2 {
-    color: white;
+        color: white;
+    }
+
+    .card {
+        flex-basis: calc(100% / 6);
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0 30px;
+    
+        .img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+    
+        .img-card {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+    
+        .p-subclass {
+            color: white;
+            font-size: 0.8rem;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .nav-bottom {
     height: 400px;
-    background-image: url(/img/jumbotron.jpg);
+    background-image: url("/resources/img/jumbotron.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -63,9 +95,8 @@ header {
     justify-content: center;
 }
 
-p {
+.btn {
     color: white;
     background-color: #0282f9;
     padding: 10px 70px;
-}
 }

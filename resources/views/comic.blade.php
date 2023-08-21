@@ -23,7 +23,7 @@
                 <h2>Talent</h2>
                 <hr>
                 <div class="d-flex">
-                    <p class="title" class="art">art by: </p>
+                    <p class="title" class="art">Art by: </p>
                     <div class="content">
                         <?php foreach($hero['artists'] as $artist) : ?>
                         <p class="text">{{ $artist }},</p>
@@ -32,7 +32,7 @@
                 </div>
                 <hr>
                 <div class="d-flex">
-                    <p class="title">written by: </p>
+                    <p class="title">Written by: </p>
                     <div class="content">
                         <?php foreach($hero['writers'] as $writer) : ?>
                         <p class="text">{{ $writer }},</p>
@@ -59,7 +59,7 @@
                 </div>
                 <hr>
                 <div class="d-flex">
-                    <p class="title-bottom">On sale date: </p>
+                    <p class="title-bottom">On Sale Date: </p>
                     <div class="content">
                         <p class="text">{{ $hero['sale_date'] }}</p>
                     </div>

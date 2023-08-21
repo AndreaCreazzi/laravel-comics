@@ -14,6 +14,7 @@
                 <p class="description">{{ $hero['description'] }}</p>
             </div>
             <div>
+                <h4 class="adv">ADVERTISEMENT</h4>
                 <img class="logo" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="logo DC">
             </div>
         </div>

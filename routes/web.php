@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('home', compact('heroes'));
 })->name('home');
 
-Route::get('/comic', function () {
+Route::get('/comic/{index}', function ($index) {
     $heroes = config('comics');
-    $hero = $heroes[0];
+    $hero = $heroes[$index];
     return view('comic', compact('hero'));
 })->name('comic');
 

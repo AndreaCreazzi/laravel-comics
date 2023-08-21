@@ -4,19 +4,67 @@
 
 @section('main-content')
     <section id="single-comic">
-        <p>{{ $hero['title'] }}</p>
-        <p>{{ $hero['description'] }}</p>
-        <p>{{ $hero['price'] }}</p>
-        <p>{{ $hero['series'] }}</p>
-        <p>{{ $hero['sale_date'] }}</p>
-        <p>{{ $hero['type'] }}</p>
-        <?php foreach($hero['artists'] as $artist) : ?>
-        <p>{{ $artist }}</p>
-        <?php endforeach ?>
-        <?php foreach($hero['writers'] as $writer) : ?>
-        <p>{{ $writer }}</p>
-        <?php endforeach ?>
-        <img src="{{ $hero['thumb'] }}" alt="">
-        <img class="logo" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="logo DC">
+        <div class="comic-img">
+            <img class="hero-img" src="{{ $hero['thumb'] }}" alt="{{ $hero['title'] }}">
+        </div>
+        <div class="wrapper-top container">
+            <div>
+                <h1>{{ $hero['title'] }}</h1>
+                <p class="price"><strong>U.S Price:</strong> {{ $hero['price'] }}</p>
+                <p class="description">{{ $hero['description'] }}</p>
+            </div>
+            <div>
+                <img class="logo" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="logo DC">
+            </div>
+        </div>
+        <div class="wrapper-bottom">
+            <div class="col-6">
+                <h2>Talent</h2>
+                <hr>
+                <div class="d-flex">
+                    <p class="title" class="art">art by: </p>
+                    <div class="content">
+                        <?php foreach($hero['artists'] as $artist) : ?>
+                        <p class="text">{{ $artist }},</p>
+                        <?php endforeach ?>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <p class="title">written by: </p>
+                    <div class="content">
+                        <?php foreach($hero['writers'] as $writer) : ?>
+                        <p class="text">{{ $writer }},</p>
+                        <?php endforeach ?>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-6">
+                <h2>Specs</h2>
+                <hr>
+                <div class="d-flex">
+                    <p class="title-bottom">Series: </p>
+                    <div class="content">
+                        <p class="text">{{ $hero['series'] }}</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <p class="title-bottom">U.S Price: </p>
+                    <div class="content">
+                        <p class="text">{{ $hero['price'] }}</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <p class="title-bottom">On sale date: </p>
+                    <div class="content">
+                        <p class="text">{{ $hero['sale_date'] }}</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
     </section>
 @endsection

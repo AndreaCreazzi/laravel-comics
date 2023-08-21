@@ -7,10 +7,12 @@
         <div class="card-container">
             @foreach ($heroes as $hero)
                 <div class="card">
-                    <div class="img-container">
-                        <img class="img-card" src="{{ $hero['thumb'] }}" alt="">
-                    </div>
-                    <p class="p-subclass">{{ $hero['series'] }}</p>
+                    <a href="{{ route('comic', ['index' => $loop->index]) }}">
+                        <div class="img-container">
+                            <img class="img-card" src="{{ $hero['thumb'] }}" alt="">
+                        </div>
+                        <p class="p-subclass">{{ $hero['series'] }}</p>
+                    </a>
                 </div>
             @endforeach
         </div>
